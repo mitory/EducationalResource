@@ -3,11 +3,11 @@ body{
 }
 .header{
 	background-color: rgba(127, 107, 245, 1);
-	height: 100px;
+	height: 200px;
 }
 .block{
 	background-color: rgba(20, 253, 29, 1);
-	height: 525px;
+	height: 720px;
 	width: 873px;
 	border: 4px solid red;
 }
@@ -17,7 +17,7 @@ ul {
     padding: 0;
     width: 277px;
     border: 1px solid #555;
-     height: 525px; /* Full height */
+     height: 720px; /* Full height */
      float: right;
      border: 4px solid rgba(12, 252, 237, 1);
 }
