@@ -5,7 +5,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{height: 100%; width: 100%;font-size: 100%;line-height: 1;font-size: 14px;
+html,body{ width: 100%;font-size: 100%;line-height: 1;font-size: 14px;
 -ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
 input,button,textarea{font-family:inherit;} input::-ms-clear{display: none;}
 button{cursor: pointer;} button::-moz-focus-inner {padding:0;border:0;}
@@ -15,7 +15,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*********************/
 body{
-    background: linear-gradient(151.93deg, #E793EF 0%, #B6A2E4 49.05%, #45DDD1 100%) no-repeat center center fixed;
+    background: linear-gradient(151.93deg, #E793EF 0%, #B6A2E4 49.05%, #45DDD1 100%) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,6 +49,7 @@ a{
 }
 .header h1{
     margin-left: 15px;
+    margin-right: 10px;
 }
 .header .login{
     display: flex;
@@ -70,6 +71,10 @@ a{
 .login a:nth-child(1){
     margin-right: 20px;
     margin-left: 70px;
+}
+.login a:hover{
+    background: rgba(217, 217, 217, 0.8);
+    Transform: scale(0.95, 0.95);
 }
 /* Навигационное меню */
 nav{
@@ -105,6 +110,10 @@ nav ul li a {
     height: 9%;
     text-align: center;
 }
+li:hover {
+    Transform: scale(0.95, 0.95);
+    background: rgba(217, 217, 217, 0.8);
+}
 li:first-child {
     margin-top: 0;
 }
@@ -113,6 +122,7 @@ li:last-child {
 }
 /*контент*/
 .block{
+    position: relative;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0.1612) 88.33%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(4px);
     border-radius: 15px;;
@@ -146,6 +156,9 @@ li:last-child {
 }
 .block-content-header{
     padding: 10px 20px;
+}
+.block-content-header:hover a{
+    color: #595959
 }
 .block-content-description{
     width: 829px;
@@ -188,6 +201,24 @@ footer{
     align-items: center;
 }
 .link a{
-    display: flex;
+    display: inline-block;
+    position: relative;
     align-items: center;
+}
+.link a::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.link a:hover::after { 
+  width: 100%; 
+  left: 0; 
 }
