@@ -5,7 +5,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{width: 100%;font-size: 100%;line-height: 1;font-size: 14px;
+html,body{height: 100%; width: 100%;font-size: 100%;line-height: 1;font-size: 14px;
 -ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
 input,button,textarea{font-family:inherit;} input::-ms-clear{display: none;}
 button{cursor: pointer;} button::-moz-focus-inner {padding:0;border:0;}
@@ -15,7 +15,12 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*********************/
 body{
-    background: linear-gradient(151.93deg, #E793EF 0%, #B6A2E4 49.05%, #45DDD1 100%);
+    background: linear-gradient(151.93deg, #E793EF 0%, #B6A2E4 49.05%, #45DDD1 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 400;
@@ -170,4 +175,19 @@ li:last-child {
     line-height: 19px;
     color: #FFFFFF;
     padding-left: 9px;
+}
+/*Футер*/
+footer{
+    float: right;
+}
+.footer{
+    margin: 100px 0;
+    width: 873px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+.link a{
+    display: flex;
+    align-items: center;
 }
