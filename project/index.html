@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Образовательный ресурс</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	<div class="content">
 		<header>
 			<div class="header">
 				<img src="Source/img/Logo_tvgu_header.png" alt="Лого">
-				<h1>Образовательный ресурс</h1>
+				<a href="index.html"><h1>Образовательный ресурс</h1></a>
 				<div class="login">
 					<a href="#">Вход</a>
 					<a href="#">Регистрация</a>
@@ -19,8 +20,8 @@
 			</div>
 		</header>
 		<nav>
-				<form action="" method="get">
-					<input class="search" name="s" type="search">
+				<form action="" method="get" onsubmit="return false">
+					<input class="search" name="s" type="search" autocomplete="off">
 				</form>
 			<ul>
 				<li class="li"><a href="#">Статьи</a></li>
@@ -36,20 +37,21 @@
 				</div>
 				<div class="block-content">
 					<div class="block-content-header">
-						<a href="#"><h3>Название</h3></a>
+						<a href="Знакомство с Loginom.mp4" target="_blank">
+							<h3>
+								МАТЕМАТИЧЕСКИЕ МОДЕЛИ В ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ
+							</h3>
+						</a>
 					</div>
 					<div class="block-content-description">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-							eu fugiat nulla pariatur.
+							В работе представлены результаты реализации механизма выявления кибератак в
+							сетевом трафике. В основе метода лежит нейросетевой подход. Рассмотрена
+							архитектура рекуррентной нейронной сети с долгой краткосрочной памятью.
 						</p>
 					</div>
 					<div class="block-content-author">
-							<p>Автор: Имя</p>
+							<p>Авторы: Семыкина Н.А. Шаповалова И.А. </p>
 					</div>
 				</div>
 				<div class="block-content">
@@ -167,5 +169,28 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		(function(){
+			var footerHeight = $('footer').css('height').replace('px', '');
+			$(window).scroll(function () {
+				var bottomOffset = $(document).height() - $(window).scrollTop() - $(window).height();
+				if (bottomOffset < footerHeight) {
+					$("nav").css('bottom', footerHeight - bottomOffset);
+				} else {
+					$("nav").css('bottom', 0);
+				}
+			});
+		})();
+		
+		$(document).ready(function() {
+			$('input').keydown(function(e) {
+				if(e.keyCode === 13) {
+					var val = $(this).val()
+					$(":contains(" + val + ")" ).css( "color", "yellow" );
+					//$(this).val()
+				}
+			});
+		});
+	</script>
 </body>
 </html>

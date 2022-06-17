@@ -84,7 +84,6 @@ nav{
     list-style-type: none;
     mix-blend-mode: normal;
     position: fixed; 
-    overflow: auto;
     margin-top: 20px;
 }
 nav .search{
@@ -96,7 +95,6 @@ nav .search{
     height: 5%;
     margin: 10% 0 25% 0;
     padding: 5px 10px 5px 30px;
-
 }
 nav ul li{
     background: rgba(217, 217, 217, 0.4);
@@ -156,6 +154,7 @@ li:last-child {
 }
 .block-content-header{
     padding: 10px 20px;
+    font-size: 23px;
 }
 .block-content-header:hover a{
     color: #595959
