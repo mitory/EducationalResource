@@ -147,14 +147,17 @@ li:last-child {
     text-align: center;
     letter-spacing: 0.15em;
 }
-
 .block-content{
     height: 39%;
     margin-top: 10px;
 }
 .block-content-header{
     padding: 10px 20px;
-    font-size: 23px;
+    font-size: 25px;
+    text-transform: lowercase;
+}
+.block-content-header:first-letter{
+    text-transform: uppercase;
 }
 .block-content-header:hover a{
     color: #595959
