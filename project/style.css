@@ -112,6 +112,10 @@ li:hover {
     Transform: scale(0.95, 0.95);
     background: rgba(217, 217, 217, 0.8);
 }
+.block-content:hover{
+    Transform: scale(1.05, 1.05);
+}
+
 li:first-child {
     margin-top: 0;
 }
@@ -223,4 +227,17 @@ footer{
 .link a:hover::after { 
   width: 100%; 
   left: 0; 
+}
+
+/*------*/
+.block_full{
+    height: 235vh;
+}
+
+.block-header_full{
+    height: 5.45%;
+}
+
+.block-content_full{
+    height: 14.05%;
 }
