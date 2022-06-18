@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Статьи</title>
+	<title>Образовательный ресурс</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="Anna_style.css">
 	<link rel="stylesheet" href="Dasha_style.css">
+	<script src="jquery-3.6.0.min.js"></script>
+	
 </head>
 <body>
 	<div class="content">
 		<header>
 			<div class="header">
 				<img src="Source/img/Logo_tvgu_header.png" alt="Лого">
-				<h1>Образовательный ресурс</h1>
+				<a href="index.html"><h1>Образовательный ресурс</h1></a>
 				<div class="login">
 					<a href="#">Вход</a>
 					<a href="#">Регистрация</a>
@@ -21,8 +23,8 @@
 			</div>
 		</header>
 		<nav>
-				<form action="" method="get">
-					<input class="search" name="s" type="search">
+				<form action="" method="get" onsubmit="return false">
+					<input class="search" name="s" type="search" autocomplete="off">
 				</form>
 			<ul>
 				<li class="li"><a href="#">Статьи</a></li>
@@ -33,103 +35,13 @@
 		</nav>
 
 		<!-- Тут ваш код -->
-
+		
 		<section>
 			<div class="block block_full">
 				<div class="block-header block-header_full">
 					<h2>Статьи</h2>
 				</div>
-				<div class="block-content block-content_full ">
-					<div class="block-content-header">
-						<a href="#"><h3>Название</h3></a>
-					</div>
-					<div class="block-content-description">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-							eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="block-content-author">
-							<p>Автор: Имя</p>
-					</div>
-				</div>
-				<div class="block-content block-content_full ">
-					<div class="block-content-header">
-						<a href="#"><h3>Название</h3></a>
-					</div>
-					<div class="block-content-description">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-							eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="block-content-author">
-							<p>Автор: Имя</p>
-					</div>
-				</div>
-				<div class="block-content block-content_full ">
-					<div class="block-content-header">
-						<a href="#"><h3>Название</h3></a>
-					</div>
-					<div class="block-content-description">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-							eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="block-content-author">
-							<p>Автор: Имя</p>
-					</div>
-				</div>
-				<div class="block-content block-content_full ">
-					<div class="block-content-header">
-						<a href="#"><h3>Название</h3></a>
-					</div>
-					<div class="block-content-description">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-							eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="block-content-author">
-							<p>Автор: Имя</p>
-					</div>
-				</div>
-				<div class="block-content block-content_full ">
-					<div class="block-content-header">
-						<a href="#"><h3>Название</h3></a>
-					</div>
-					<div class="block-content-description">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							Ut enim ad minim veniam, 
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-							eu fugiat nulla pariatur.
-						</p>
-					</div>
-					<div class="block-content-author">
-							<p>Автор: Имя</p>
-					</div>
-				</div>
-				<div class="block-content block-content_full ">
+				<div class="block-content block-content_full">
 					<div class="block-content-header">
 						<a href="#"><h3>Название</h3></a>
 					</div>
@@ -148,8 +60,96 @@
 					</div>
 				</div>
 
+				<div class="block-content block-content_full">
+					<div class="block-content-header">
+						<a href="#"><h3>Название</h3></a>
+					</div>
+					<div class="block-content-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="block-content-author">
+							<p>Автор: Имя</p>
+					</div>
+				</div><div class="block-content block-content_full">
+					<div class="block-content-header">
+						<a href="#"><h3>Название</h3></a>
+					</div>
+					<div class="block-content-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="block-content-author">
+							<p>Автор: Имя</p>
+					</div>
+				</div><div class="block-content block-content_full">
+					<div class="block-content-header">
+						<a href="#"><h3>Название</h3></a>
+					</div>
+					<div class="block-content-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="block-content-author">
+							<p>Автор: Имя</p>
+					</div>
+				</div><div class="block-content block-content_full">
+					<div class="block-content-header">
+						<a href="#"><h3>Название</h3></a>
+					</div>
+					<div class="block-content-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="block-content-author">
+							<p>Автор: Имя</p>
+					</div>
+				</div><div class="block-content block-content_full">
+					<div class="block-content-header">
+						<a href="#"><h3>Название</h3></a>
+					</div>
+					<div class="block-content-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+							eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="block-content-author">
+							<p>Автор: Имя</p>
+					</div>
+				</div>
 			</div>
+				
 		</section>
+
 		<footer>
 			<div class="footer">
 				<img src="Source/img/Logo_tvgu_footer.png" alt="лого">

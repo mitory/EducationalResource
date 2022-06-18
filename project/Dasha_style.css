@@ -1,14 +1,13 @@
 
 .block_full{
-    height: 235vh;
 
+    height: 235vh;
 }
+
 .block-header_full{
     height: 5.45%;
 }
 
 .block-content_full{
     height: 14.05%;
-    margin-top: 10px;
 }
-
