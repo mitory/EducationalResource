@@ -199,9 +199,14 @@
 					var val = $(this).val();
 					if (val === '') return;
 					var isScroll = false;
+					let count = 0;
 					//alert($('.block-content').html().replace(val, '<span style="color: red">' + val + '</span>'))
 					$('.block-content').html(function(index, oldValue) {
-						if(!isScroll & oldValue.indexOf(val) != -1){
+						var indexOf = oldValue.indexOf(val)
+						if(indexOf != -1){
+							count++;
+						}
+						if(!isScroll & indexOf != -1){
 							let posY = $('.block-content:eq(' + index + ')').offset().top;
 							$('html,body').scrollTop(posY - 300);
 							isScroll = true;
@@ -210,6 +215,9 @@
 						return oldValue.replace(new RegExp(val, 'g'),
 						 '<span style="color: yellow; font-weight: bold">' + val + '</span>');
 					});
+					if(count == 0){
+						alert('Ничего не найдено. Попробуйте осуществить поиск в других разделах.')
+					}
 				};
 			});
 		});
