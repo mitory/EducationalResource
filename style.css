@@ -115,6 +115,9 @@ li:hover {
 .block-content:hover{
     Transform: scale(1.05, 1.05);
 }
+.block-no-hover:hover{
+    Transform: scale(1, 1);
+}
 
 li:first-child {
     margin-top: 0;
@@ -132,6 +135,9 @@ li:last-child {
 	width: 873px;
     float: right;
     margin: 0 0 20px 0;
+}
+.block-feedback{
+    height: 100vh;
 }
 .block-header{
     text-align: center;
@@ -173,6 +179,17 @@ li:last-child {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
     border-radius: 15px 15px 0px 0px;
+}
+.block-content-description-feedback{
+    width: 829px;
+    height: 30%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 5px;
+}
+.block-content-description-feedback a{
+    color: green;
 }
 .block-content-description p {
     font-size: 20px;
@@ -240,4 +257,27 @@ footer{
 
 .block-content_full{
     height: 14.05%;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 0.5fr);
+    font-size: 25px;
+    margin: 20px 50px;
+}
+.table p{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.block-footer{
+    width: 829px;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px;
+}
+.block-footer p a{
+    font-size: 22px;
+    color: green;
 }
