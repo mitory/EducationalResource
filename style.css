@@ -139,6 +139,7 @@ li:last-child {
 }
 .block-feedback{
     height: 100vh;
+    margin: 0 0 60vh 0;
 }
 .block-header{
     text-align: center;
