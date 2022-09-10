@@ -1,20 +1,94 @@
-
 /*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{ width: 100%;font-size: 100%;line-height: 1;font-size: 14px;
--ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
-input,button,textarea{font-family:inherit;} input::-ms-clear{display: none;}
-button{cursor: pointer;} button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;} a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
 /*********************/
-body{
+
+body {
     background: linear-gradient(151.93deg, #E793EF 0%, #B6A2E4 49.05%, #45DDD1 100%) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -28,14 +102,17 @@ body{
     line-height: 53px;
     color: #393939;
 }
-a{
+
+a {
     color: #393939;
 }
-.content{
+
+.content {
     width: 1170px;
     margin: auto;
 }
-.header{
+
+.header {
     height: 15vh;
     display: flex;
     align-items: center;
@@ -43,21 +120,25 @@ a{
     text-transform: uppercase;
     color: #403F41;
 }
-.header img{
+
+.header img {
     height: 90%;
     margin-left: 107px;
 }
-.header h1{
+
+.header h1 {
     margin-left: 15px;
     margin-right: 10px;
 }
-.header .login{
+
+.header .login {
     margin-left: 200px;
     display: flex;
     align-items: center;
     text-align: center;
 }
-.login a{
+
+.login a {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
@@ -69,25 +150,29 @@ a{
     padding: 11px;
     border-radius: 15px;
 }
-.login a:nth-child(1){
+
+.login a:nth-child(1) {
     margin-right: 20px;
     margin-left: 70px;
 }
-.login a:hover{
+
+.login a:hover {
     background: rgba(217, 217, 217, 0.8);
     Transform: scale(0.95, 0.95);
 }
+
 /* Навигационное меню */
-nav{
+nav {
     width: 277px;
     height: 85vh;
     float: left;
     list-style-type: none;
     mix-blend-mode: normal;
-    position: fixed; 
+    position: fixed;
     margin-top: 20px;
 }
-nav .search{
+
+nav .search {
     width: 276px;
     font-size: 20px;
     background: rgba(255, 255, 255, 0.8) url(Source/img/search.png) left no-repeat;
@@ -97,51 +182,61 @@ nav .search{
     margin: 10% 0 25% 0;
     padding: 5px 10px 5px 30px;
 }
-nav ul li{
+
+nav ul li {
     background: rgba(217, 217, 217, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     margin: 15% auto;
 }
+
 nav ul li a {
     display: block;
     text-align: center;
     height: 9%;
     text-align: center;
 }
+
 li:hover {
     Transform: scale(0.95, 0.95);
     background: rgba(217, 217, 217, 0.8);
 }
-.block-content:hover{
+
+.block-content:hover {
     Transform: scale(1.05, 1.05);
 }
-.block-no-hover:hover{
+
+.block-no-hover:hover {
     Transform: scale(1, 1);
 }
 
 li:first-child {
     margin-top: 0;
 }
+
 li:last-child {
     margin-bottom: 0;
 }
+
 /*контент*/
-.block{
+.block {
     position: relative;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0.1612) 88.33%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0.1612) 88.33%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(4px);
-    border-radius: 15px;;
-	height: 85vh;
-	width: 873px;
+    border-radius: 15px;
+    ;
+    height: 85vh;
+    width: 873px;
     float: right;
     margin: 0 0 20px 0;
 }
-.block-feedback{
+
+.block-feedback {
     height: 100vh;
     margin: 0 0 60vh 0;
 }
-.block-header{
+
+.block-header {
     text-align: center;
     width: 672px;
     border-bottom: 3px solid #393939;
@@ -149,7 +244,8 @@ li:last-child {
     margin: auto;
     height: 15%;
 }
-.block-header h2{
+
+.block-header h2 {
     margin-bottom: 3%;
     font-family: 'Lora';
     font-style: normal;
@@ -159,22 +255,27 @@ li:last-child {
     text-align: center;
     letter-spacing: 0.15em;
 }
-.block-content{
+
+.block-content {
     height: 39%;
     margin-top: 10px;
 }
-.block-content-header{
+
+.block-content-header {
     padding: 10px 20px;
     font-size: 25px;
     text-transform: lowercase;
 }
-.block-content-header:first-letter{
+
+.block-content-header:first-letter {
     text-transform: uppercase;
 }
-.block-content-header:hover a{
+
+.block-content-header:hover a {
     color: #595959
 }
-.block-content-description{
+
+.block-content-description {
     width: 829px;
     height: 60%;
     margin: auto;
@@ -182,7 +283,8 @@ li:last-child {
     backdrop-filter: blur(4px);
     border-radius: 15px 15px 0px 0px;
 }
-.block-content-description-feedback{
+
+.block-content-description-feedback {
     width: 829px;
     height: 30%;
     margin: auto;
@@ -190,16 +292,19 @@ li:last-child {
     line-height: 26px;
     padding: 5px;
 }
-.block-content-description-feedback a{
+
+.block-content-description-feedback a {
     color: green;
 }
+
 .block-content-description p {
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
     padding: 5px;
 }
-.block-content-author{
+
+.block-content-author {
     border-radius: 0 0 15px 15px;
     width: 829px;
     height: 10%;
@@ -208,78 +313,89 @@ li:last-child {
     backdrop-filter: blur(4px);
     border-top: 1px solid #525050;
 }
-.block-content-author p{
+
+.block-content-author p {
     font-size: 24px;
     line-height: 19px;
     color: #FFFFFF;
     padding-left: 9px;
 }
+
 /*Футер*/
-footer{
+footer {
     float: right;
 }
-.footer{
+
+.footer {
     margin: 100px 0;
     width: 873px;
     height: 15vh;
     display: flex;
     align-items: center;
 }
-.link a{
+
+.link a {
     display: inline-block;
     position: relative;
     align-items: center;
 }
-.link a::after { 
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  background: none repeat scroll 0 0 transparent;
-  height: 2px;
-  width: 0;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+.link a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.link a:hover::after { 
-  width: 100%; 
-  left: 0; 
+.link a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /*------*/
-.block_full{
+.block_full {
     height: 235vh;
 }
-
-.block-header_full{
-    height: 5.45%;
+.block_files{
+    height: 400vh;
 }
 
-.block-content_full{
-    height: 14.05%;
+.block-header_full {
+    height: 15vh;
 }
 
-.table{
+.block-content_full {
+    height: 32vh;
+}
+
+.table {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(4, 0.5fr);
     font-size: 25px;
     margin: 20px 50px;
 }
-.table p{
+
+.table p {
     border: 1px solid black;
     border-radius: 10px;
     padding-left: 5px;
 }
-.block-footer{
+
+.block-footer {
     width: 829px;
     font-size: 20px;
     margin: auto;
     padding: 5px;
 }
-.block-footer p a{
+
+.block-footer p a {
     font-size: 22px;
     color: green;
 }
